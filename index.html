@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اختبار سرعة ⚡</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="img/keyboard_cartoon.jpg" alt="logo image" class="logo-img" />
+      </nav>
+      <ul>
+        <a>link</a>
+        <a>link</a>
+        <a>link</a>
+      </ul>
+    </header>
+
+    <main>
+      <div dir="rtl" class="text-box">
+        <span class="typed-text"></span>
+      </div>
+      <!-- ////////////////////////////////// -->
+      <section class="results-box hidden" dir="rtl">
+        <div class="result">
+          <label>إجمالي عدد الكلمات في الدقيقة:</label>
+          <span id="grossWPM"></span>
+        </div>
+        <div class="result">
+          <label>
+            صافي عدد الكلمات في الدقيقة: <sub>(بدون احتساب الأخطاء)</sub>
+          </label>
+          <span id="netWPM"></span>
+        </div>
+        <div class="result">
+          <label>الدقة:</label>
+          <span id="accuracy"></span>
+        </div>
+      </section>
+      <button class="btn-restart" id="countdown">01:00</button>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

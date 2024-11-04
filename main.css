@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden; /* Disable vertical scrolling */
+  background-color: #333a45;
+}
+
+header {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #333a45;
+  padding: 20px 0 0 20px;
+  height: 70px;
+}
+.logo-img {
+  width: 50px;
+}
+
+ul {
+  list-style: none;
+  width: 300px;
+  display: flex;
+  margin-right: 20px;
+  justify-content: space-evenly;
+}
+
+main {
+  width: 100%;
+  min-height: 400px;
+  display: grid;
+  grid-template-rows: 300px 1fr;
+  padding-top: 40px;
+  place-content: center;
+}
+
+.text-box {
+  font-family: 'Rubik', serif;
+  color: #939eae;
+  width: 1000px;
+  height: 300px;
+  padding: 5px 10px;
+  font-size: 2.5rem;
+  text-align: justify;
+  line-height: 2.5;
+  overflow: hidden;
+}
+.results-box {
+  font-family: 'Rubik', serif;
+  font-size: 2.5rem;
+  color: #e9ecf0;
+  width: 700px;
+  height: 300px;
+  padding: 5px 10px;
+  margin-left: 100px;
+  line-height: 2.5;
+}
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.results-box label {
+  min-width: 100px; /* Adjust as needed to align labels */
+}
+
+.results-box span {
+  font-weight: bold;
+}
+.btn-restart {
+  grid-row: 2 / 3;
+  justify-self: center;
+  text-decoration: none;
+  color: #e9ecf0;
+  border-radius: 10px;
+  border: 3px #e9ecf0 solid;
+  font-size: 2rem;
+  background-color: #333a45;
+  width: 150px;
+  margin-top: 30px;
+}
+.btn-restart:hover {
+  background-color: lightslategrey;
+  cursor: pointer;
+}
+.extra {
+  color: blueviolet;
+}
+
+.correct {
+  color: #e9ecf0;
+}
+.wrong {
+  color: #d03334;
+}
+.hidden {
+  visibility: hidden;
+  transition: visibility 0.5s ease;
+  display: none;
+}
+.cursor {
+  position: absolute;
+  height: 40px;
+  width: 3px;
+  background-color: #f44c7f;
+  transition: top 100ms ease, left 100ms ease;
+  border-radius: 2px;
+}
+sub {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
