@@ -9,3 +9,5 @@ I need to make the site responsive.
 The feature for free typing should be added.
 this issue of 'ل ا لا' displaying as a one letter should be solved
 I also need to remove the spaghetti code from the JavaScript.
+
+i think craeting the html live is bad I should find another way to make the html be there
